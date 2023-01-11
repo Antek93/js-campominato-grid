@@ -52,15 +52,18 @@ main {
     background-color: aqua ;
 }
 
-/* Classe assegnata al bottone */
+/* Classe assegnata al bottone play */
 .player {
     width: 147px;
-    height: 40px;
+    height: 147px;
     font-size: 25px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    cursor: pointer;
+    border-radius: 50%;
+    line-height: 50%;
 }
 
 /* classe degli elementi a scomparsa*/
@@ -69,13 +72,36 @@ main {
     display: none !important;
 }
 
+/* Classe assegnata alla select */
+
 .difficolta {
 
     position: absolute;
     top: 5%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 119px;
-    height: 29px;
+    width: 147px;
+    height: 34px;
     font-size: 20px;
+    border-radius: 14px;
+    border: 2px solid black;
+}
+
+/* Classe assegnata al bottone restart */
+
+#restart {
+    width: 147px;
+    height: 40px;
+    font-size: 25px;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    border-radius: 14px;
+}
+
+#restart > a {
+    text-decoration: none;
+    color: black;
 }
