@@ -1,7 +1,7 @@
 console.log('HI, I am java and I am working fine');
 
-
-
+let selection = document.getElementById('difficulty').value;
+console.log("cos'è?", selection);
 
 
 
