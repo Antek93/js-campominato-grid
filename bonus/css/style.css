@@ -24,12 +24,27 @@ main {
 }
 
 #grid-container > .cell {
-    width: calc(100% / 10);
-    height: calc(100% / 10);
     border: 2px solid white;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.easy {
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    font-size: 26px;
+}
+
+.medium {
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+    font-size: 26px;
+}
+
+.hard {
+    width: calc(100% / 7);
+    height: calc(100% / 7);
     font-size: 26px;
 }
 
