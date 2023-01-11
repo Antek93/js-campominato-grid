@@ -47,7 +47,6 @@ play.addEventListener('click',
 
             // D).
 
-            // 1. Quando l'utente clicca sulla cella, la cella cambia colore
 
             newCell.addEventListener('click', //Quando clicco sul div creato (newCell)
             
@@ -55,11 +54,13 @@ play.addEventListener('click',
 
                 console.log('Clicked') //in console compare la voce clicked come verifica
 
-                // 2. Quando l'utente clicca sulla cella, in console viene stampato il numero della casella
+                // 1. Quando l'utente clicca sulla cella, in console viene stampato il numero della casella
 
                 console.log('Numero della casella', allNumbers) // in console compare il numero della casella selzionata
 
                 // Creata logica per selezionare e deselezionare la casella con il click 
+
+                // 2. Quando l'utente clicca sulla cella, la cella cambia colore
 
                 if (this.classList.contains('clicked')) { //SE la casella selezioanta CONTIENE la classe CLICKED:
                     
