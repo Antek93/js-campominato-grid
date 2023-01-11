@@ -32,8 +32,11 @@ play.addEventListener('click',
         for (let i = 0; i < 100; i++) {
 
 // 4.3: Aggiungere nel div con ID grid-container 100 div con class=cell (già stilizzata su css)
-            const newCell = document.createElement('div');
-            newCell.classList.add('cell');
+            const newCell = document.createElement('div'); // Per creare un elemento DIV
+            newCell.classList.add('cell'); // Per aggiungere la classe cell al DIV
+            gridContainer.append(newCell); // Per esportare il DIV creato nel grid-container
+            gridContainer.classList.remove('hidden'); //Per rimuovere l'elemento display:none
+            play.classList.add('hidden'); //Per rimuovere play dopo averci cliccato la prima volta
 
          }
 
@@ -42,41 +45,41 @@ play.addEventListener('click',
 );
 
 
-// Per ripetere un operazione 64 volte creiamo un ciclo FOR 
+// // Per ripetere un operazione 64 volte creiamo un ciclo FOR 
 
-for (let i = 0; i < 64; i++) {
+// for (let i = 0; i < 64; i++) {
 
-    //aggiungi nel div grid-container 64 volte un div class=cell
-    // gridContainer.innerHTML += `<div class="cell"></div>`
+//     //aggiungi nel div grid-container 64 volte un div class=cell
+//     // gridContainer.innerHTML += `<div class="cell"></div>`
 
-    // oppure:
+//     // oppure:
 
-    const newCell = document.createElement('div');
-    newCell.classList.add('cell');
+//     const newCell = document.createElement('div');
+//     newCell.classList.add('cell');
 
-    //aggiungere un evento per il click
+//     //aggiungere un evento per il click
 
-    newCell.addEventListener('click',
+//     newCell.addEventListener('click',
             
-            function() {
+//             function() {
 
-                console.log(this) // 
-                console.log('Clicked') //in console compare la voce clicked come verifica
+//                 console.log(this) // 
+//                 console.log('Clicked') //in console compare la voce clicked come verifica
 
-                if(this.classList.contains('clicked')) {
-                    this.classList.remove('clicked')
+//                 if(this.classList.contains('clicked')) {
+//                     this.classList.remove('clicked')
 
-                } else {
+//                 } else {
 
-                    this.classList.add('clicked')
+//                     this.classList.add('clicked')
                     
-                }
+//                 }
 
-        }
+//         }
         
-    );
+//     );
 
-    gridContainer.append(newCell);
+//     gridContainer.append(newCell);
 
-}
+// }
 

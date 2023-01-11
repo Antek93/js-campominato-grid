@@ -21,12 +21,11 @@ main {
     background-color: salmon;
     display: flex;
     flex-wrap: wrap;
-
 }
 
 #grid-container > .cell {
-    width: calc(100% / 8);
-    height: calc(100% / 8);
+    width: calc(100% / 10);
+    height: calc(100% / 10);
     border: 2px solid white;
 
 }
@@ -44,4 +43,8 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+
+.hidden { 
+    display: none !important;
 }
